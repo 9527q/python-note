@@ -10,7 +10,7 @@
   * [《Python编程从入门到实践》](Python/PythonCrashCourse.md)
   * [库](Python/library/README.md)
     * [celery](Python/library/celery.md)
-    * [](Python/library/flake8.md)
+    * [flake8](Python/library/flake8.md)
     * [matplotlib](Python/library/matplotlib.md)
     * [requests](Python/library/requests.md)
     * [Supervisor](Python/library/supervisor.md)

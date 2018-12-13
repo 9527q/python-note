@@ -1,3 +1,5 @@
+# flake8
+
 配置
 同级的.flake8文件中
 [flake8]
