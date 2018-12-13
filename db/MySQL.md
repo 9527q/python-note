@@ -2,13 +2,13 @@
 
 ## 外部命令
 
-导出数据库数据到 .sql 文件
+导出数据库数据到 `.sql` 文件
 
 ```sh
 mysqldump -u root -p <database> > filename.sql
 ```
 
-导入.spl文件到数据库中
+导入 `.spl` 文件到数据库中
 
 ```sh
 mysql -u root -p <database> < filename.sql

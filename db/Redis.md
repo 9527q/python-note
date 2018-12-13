@@ -42,6 +42,7 @@ redis-cli ping [message]
 关闭服务：
 
 启动服务的地方关闭
+
 ```sh
 redis-cli shutdown [NOSAVE|SAVE]
 # 默认为save,nosave真的就不会保存数据的吗？

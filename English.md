@@ -17,9 +17,12 @@ interpreter | 解释器 | terminal | 终端
 LTS | Long Term Support | IDE | Integrated Development Environment
 syntax | 语法
 sync| 同步 | async | 异步
+generate | 产生
 
-## 其他
+## 数学
 
 e | c | e | c
 -|-|-|-
-generate | 产生
+theory | 理论 | experiment | 实验
+probability | 概率 | distribution | 分布
+random | 随机

@@ -13,8 +13,8 @@
             1 对于 . 开头的隐藏文件，会被忽略
             2 对于其他需要被忽略的文件，需要把每一个文件名都放到全局变量 EXTENDS 中
 
-        同级目录/文件之间的顺序是怎样的？
-            按照名字排序
+        同级目录/文件之间在book中的顺序是怎样的？
+            按照真实文件名排序
 
         具体的文件都有指向，那文件夹指向谁呢？
             1 文件夹一律指向其下readme文档。
@@ -44,7 +44,7 @@ README = 'README.md'
 # 程序自动生成readme文件时，其中的内容
 README_CONT = '# 说明'
 # 不属于电子书的文件(夹)或者不想显示在电子书中的文件(夹)
-EXTENDS = {'_book', 'gitbook_gen_summary.py'}
+EXTENDS = {'_book', 'images', 'gitbook_gen_summary.py'}
 
 
 def get_path() -> str:
