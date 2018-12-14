@@ -26,3 +26,9 @@ e | c | e | c
 theory | 理论 | experiment | 实验
 probability | 概率 | distribution | 分布
 random | 随机
+
+## 工作
+
+e | c | e | c
+-|-|-|-
+ERP | Enterprise Resource Planning

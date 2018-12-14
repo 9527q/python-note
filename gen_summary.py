@@ -44,7 +44,7 @@ README = 'README.md'
 # 程序自动生成readme文件时，其中的内容
 README_CONT = '# 说明'
 # 不属于电子书的文件(夹)或者不想显示在电子书中的文件(夹)
-EXTENDS = {'_book', 'images', 'gitbook_gen_summary.py'}
+EXTENDS = {'_book', 'images', 'gen_summary.py'}
 
 
 def get_path() -> str:
