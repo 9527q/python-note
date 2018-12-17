@@ -19,6 +19,7 @@
     * [Anaconda](Python/tools/Anaconda.md)
     * [PIP](Python/tools/PIP.md)
     * [Pycharm](Python/tools/PyCharm.md)
+    * [Jupyter Notebook](Python/tools/jupyter.md)
   * [丑数](Python/uglynumber.md)
 * [数据库](db/README.md)
   * [MySQL](db/MySQL.md)
