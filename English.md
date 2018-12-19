@@ -6,7 +6,7 @@ e | c | e | c
 -|-|-|-
 application | 应用;申请 | explorer | 资源管理器
 instruction | 说明 | summary | 摘要;概要
-tutorial | 教程
+tutorial | 教程 | reference | 参考;涉及;引用
 setup | 安装，设置 | install, uninstall
 plugin | 插件
 temporary | 临时的
