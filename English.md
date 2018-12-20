@@ -10,6 +10,7 @@ tutorial | 教程 | reference | 参考;涉及;引用
 setup | 安装，设置 | install, uninstall
 plugin | 插件
 temporary | 临时的
+trash | 垃圾
 
 ## 编程
 
@@ -26,6 +27,9 @@ generate | 产生
 activate | 起动，触发，使开始作用 | deactivate | [diˈæktəˌvet] 使无效
 tail | 尾部
 buffer | 缓冲期，缓冲区
+expr | 表达式
+UUID | 通用唯一识别码(Universally Unique Identifier)
+index | 索引;指数(标志,例如百度指数,不是函数)
 
 ## 数学物理
 
