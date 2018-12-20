@@ -30,6 +30,9 @@ buffer | 缓冲期，缓冲区
 expr | 表达式
 UUID | 通用唯一识别码(Universally Unique Identifier)
 index | 索引;指数(标志,例如百度指数,不是函数)
+valid | 有效 | invalid | 无效
+literal | adj.字面的;原义的;n.文字上的错误
+ACM | Association for Computing Machinery 国际计算机学会
 
 ## 数学物理
 
@@ -39,6 +42,7 @@ theory | 理论 | experiment | 实验
 probability | 概率 | distribution | 分布
 random | 随机
 inch | 英寸
+quarter | 1/4
 
 ## 工作
 
