@@ -65,7 +65,7 @@ def gen_tree(path) -> list:
     if README in dirs:
         dirs.remove(README)
     else:
-        with open(os.path.join(path, README), 'w') as f:
+        with open(os.path.join(path, README), 'w', encoding='utf-8') as f:
             f.write(README_CONT)
 
     # 结果
@@ -93,7 +93,7 @@ def gen_tree(path) -> list:
 
 
 def gen_summary(path, tree):
-    with open(os.path.join(path, SUMMARY), 'w') as f:
+    with open(os.path.join(path, SUMMARY), 'w', encoding='utf-8') as f:
         # 标题
         f.write(SUMMARY_TITLE + '\n\n')
         # readme
@@ -107,10 +107,10 @@ def gen_summary(path, tree):
         # 增加主要目录内容
         for name, link in tree:
             with open(os.path.join(path, link), 'r') as fi:
-                line1 = fi.readlines(1)[0]
-                name1 = (line1 + ' ')[2:line1.find('\n')]
+                lines = fi.readlines(1)
+                name1 = (lines[0] + ' ')[2:lines[0].find('\n')] if len(lines) else name[name.rfind(os.path.sep) + 1:]
             if README in link:
-                with open(os.path.join(path, link), 'r') as fi:
+                with open(os.path.join(path, link), 'r', encoding='utf-8') as fi:
                     if README_CONT == fi.read():
                         name1 = name[name.rfind(os.path.sep) + 1:]
             f.write(SUMMARY_CONT.format(s=' ' * 2 * name.count(os.path.sep), name=name1, link=link))
