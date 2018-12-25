@@ -36,6 +36,7 @@
 - filter
     - contains使用的是like %str%实现的
     - 判断空使用isNull=True
+    - range 相当于between and，后面接2元列表参数
 
 #### 对象方法
 

@@ -41,6 +41,7 @@ e | c | e | c
 theory | 理论 | experiment | 实验
 probability | 概率 | distribution | 分布
 random | 随机
+stats | 统计学
 inch | 英寸
 quarter | 1/4
 

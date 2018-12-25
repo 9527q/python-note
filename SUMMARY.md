@@ -17,6 +17,7 @@
     * [celery](Python/library/celery.md)
     * [flake8](Python/library/flake8.md)
     * [matplotlib](Python/library/matplotlib.md)
+    * [_lat = re.compile('"shopLat":(.*?),')](Python/library/re.md)
     * [requests](Python/library/requests.md)
     * [Supervisor](Python/library/supervisor.md)
   * [限制函数执行时间的装饰器](Python/thread_limit_ftime.md)
@@ -54,4 +55,4 @@
   * [GIT](tools/git.md)
   * [排列组合](tools/math.md)
   * [VIM](tools/vim.md)
-* [想干什么](want.md)
+* [TODO](want.md)

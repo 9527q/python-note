@@ -9,6 +9,7 @@ cd - | 返回上次的位置
 df -h | 查看各文件系统空间使用情况
 top | 查看系统实时运行情况
 `sudo service <serve name> <opt>` | opt: status/start/stop`,服务状态、开启、关闭
+locale | 将语言环境的信息写到标准输出
 
 ## 常用文件
 
