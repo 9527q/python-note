@@ -1,3 +1,5 @@
+# re
+
 re_lat = re.compile('"shopLat":(.*?),')
 
 

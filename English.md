@@ -11,6 +11,7 @@ setup | 安装，设置 | install, uninstall
 plugin | 插件
 temporary | 临时的
 trash | 垃圾
+pixel | 像素
 
 ## 编程
 
