@@ -5,7 +5,7 @@
 > 与 PIL 的关系：
 > Pillow is the friendly PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors.
 > > PIL 仅支持到 Python2.7，且年久失修，于是一群志愿者在 PIL 的基础上创建了兼容的版本，就是 Pillow。
-> 
+>
 > Pillow 和 PIL 不能共存于一个环境中
 
 - [官方文档](https://pillow.readthedocs.io/en/5.3.x/)

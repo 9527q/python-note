@@ -1,4 +1,6 @@
-# Python &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![python](images/python.png)
+# Python
+
+![python](images/python.png)
 
 ## 终端执行python
 

@@ -5,7 +5,8 @@
 ### 哲学
 
 - [哲学入门有哪些书推荐？ - 风好大我听不见的回答 - 知乎](https://www.zhihu.com/question/19588342/answer/21188918)
-  - 《你的第一本哲学书》【托马斯·内格尔】《what does it all mean》
+  - 《你的第一本哲学书》【托马斯·内格尔】（《what does it all mean》【Thomas Nagel】）
+    > 本书时一部简明扼要的哲学入门，是写给第一次接触哲学的读者看的。哲学的核心在于一些特定的问题，反思这些问题时，人类的心灵会自然而然感到困惑。开始学习哲学的最好方式，就是直接思考这些问题。 ——托马斯·内格尔
 
 ### 兴趣
 
@@ -34,3 +35,7 @@
 - 《美丽心灵的永恒阳光》（Eternal Sunshine of the Spotless Mind）
   - [阮一峰解读](http://www.ruanyifeng.com/blog/2005/08/post_134.html)
 - all
+
+## 剧
+
+《大江大河》

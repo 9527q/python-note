@@ -2,21 +2,21 @@
 
 ## 外部命令
 
-导出数据库数据到 `.sql` 文件
+导出数据库数据到 `.sql` 文件。
 
 ```sh
-mysqldump -u root -p <database> > filename.sql
+mysqldump -u username -p database > datafile.sql
 ```
 
-导入 `.spl` 文件到数据库中
+导入 `.spl` 文件到数据库中。
 
 ```sh
-mysql -u root -p <database> < filename.sql
+mysql -u username -p database < datafile.sql
 ```
 
 ## 内部命令
 
-关键词大小写不敏感
+大小写不敏感
 
 ### 查看变量值
 

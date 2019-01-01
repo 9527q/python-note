@@ -1,4 +1,5 @@
 # 牛顿引力
+
 牛顿三大定律
 
 牛顿第一方程：F=ma（（三维）矢量方程）（四维时空将被结合起来）（为了表示是矢量方程，一般给加上箭头（字母F和a））
@@ -12,10 +13,11 @@
 
 最后就是F=m * 位置对时间的二阶导数，这就是牛顿第一定律和第二定律的结合
 
-# 英汉对照
+## 英汉对照
+
 E | 中 | E | 中
-- | - | - | -
-Force | | Gravity | 
+-|-|-|-
+Force | | Gravity |
 Electrical force | | Magnetic force | 磁场力
 geometric | 几何学的 | geometry | 几何学
 the general theory of relativity | |

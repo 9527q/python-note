@@ -5,9 +5,9 @@
 ## 开启celery服务
 
 ```sh
-$ celery -A celery_task.tasks worker --loglevel=info
-$ celery -A tasks worker --loglevel=info
-$ celery -A celery_task.tasks worker --loglevel=info --logfile=celery.log
+celery -A celery_task.tasks worker --loglevel=info
+celery -A tasks worker --loglevel=info
+celery -A celery_task.tasks worker --loglevel=info --logfile=celery.log
 ```
 
 注意：tasks处的写法取决于执行命令时的位置，但是会影响使用
