@@ -42,3 +42,5 @@ tail | 尾部
 quarter | 1/4
 product | 乘积；产品；结果
 index | 索引；指数（标志，例如百度指数，不是函数）
+oracle | 神谕;圣贤
+molecule | 分子（化学）

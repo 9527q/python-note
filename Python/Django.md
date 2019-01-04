@@ -2,7 +2,21 @@
 
 ## ORM
 
+相关命令
+
+- `python manage.py makemigrations` 生成迁移文件
+- `python manage.py sqlmigrate` 查看实际执行的 SQL 语句
+- `python manage.py migrate` 真正迁移
+- 发生冲突，使用 `python manage.py migrate app {指定的migrations}` 回退再重新 migrate
+
+### 开发
+
+- 清楚每一句代码对应怎么样的 SQL 语句和执行过程
+
 ### 模型类定义
+
+- Model 用大驼峰命名法，数据库自动转为 {app小写}_{model名称小写}
+- Model 的外键，数据库会自动转为 {外键名称小写}_id，并创建一条外键
 
 #### 模型类的属性（字段）
 
