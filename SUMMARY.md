@@ -59,5 +59,4 @@
   * [排列组合](tools/math.md)
   * [VIM](tools/vim.md)
 * [我想做什么&我要做什么&我做了什么](want/README.md)
-  * [2019](want/2019.md)
   * [TODO](want/want.md)
