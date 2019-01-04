@@ -2,20 +2,35 @@
 
 ![tux](images/tux.png)
 
-> Linux is not Unix
+（Linux 吉祥物 Tux）
+
+Linux（/ˈlɪnəks/）是一种自由和开放源代码的类UNIX操作系统。该操作系统的内核由林纳斯·托瓦兹（Linus）在1991年10月5日（未满22周岁）首次发布。
+
+Linux可以运行在服务器和其他大型平台之上，如大型计算机和超级计算机。世界上500个最快的超级计算机90％以上运行Linux发行版或变种，包括最快的前10名超级计算机运行的都是基于Linux内核的操作系统。Linux也广泛应用在嵌入式系统上，如手机（Mobile Phone）、平板电脑（Tablet）、路由器（Router）、电视（TV）和电子游戏机等。在移动设备上广泛使用的Android操作系统就是创建在Linux内核之上。
+
+通常情况下，Linux被打包成供个人计算机和服务器使用的Linux发行版，一些流行的主流Linux发布版，包括Debian（及其派生版本Ubuntu、Linux Mint）、Fedora（及其相关版本Red Hat Enterprise Linux、CentOS）和openSUSE等。
 
 sudo ifconfig 网卡 ip 是什么作用，不能上网
 
 ## 常用命令
 
-命令 | 说明
--|-
-cd | 返回家目录
-cd - | 返回上次的位置
-df -h | 查看各文件系统空间使用情况
-top | 查看系统实时运行情况
-`sudo service <serve name> <opt>` | opt: status/start/stop`,服务状态、开启、关闭
+命令 | 使用 | 说明
+-|-|-
+~ | | 当前用户家目录
+/ | | 根目录
+. | | 当前目录
+.. | | 上级目录
+cd | cd path | change directory 切换到 path 路径下
+ | cd | 不加参数：切换到家目录
+ | cd - | 之前的目录
+df | df -h | 查看各文件系统空间使用情况
+top | | 查看系统实时运行情况
+service | service serve_name opt | opt: status/start/stop`,服务状态、开启、关闭
 locale | 将语言环境的信息写到标准输出
+tail | tail file | 查看文件 file 最后 10 行的内容
+| tail -number file | 查看文件 file 最后 number 行
+| tail +number file | 查看文件 file 第 number 行（包括）之后的内容
+| tail -f file | 查看文件 file 最后10行的实时内容
 
 ## 常用文件
 
