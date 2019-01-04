@@ -3,6 +3,7 @@
 * [说明](README.md)
 * [目录](SUMMARY.md)
 
+---
 
 * [OS](OS/README.md)
   * [Linux](OS/Linux.md)
@@ -48,6 +49,8 @@
   * [基础概念](network/netbase.md)
   * [网络](network/network.md)
 * [阅读记录](read.md)
+* [TODO](todo/README.md)
+  * [电影](todo/movie.md)
 * [tools](tools/README.md)
   * [GitBook](tools/GitBook/README.md)
     * [安装与使用](tools/GitBook/install.md)
@@ -58,6 +61,3 @@
   * [GIT](tools/git.md)
   * [排列组合](tools/math.md)
   * [VIM](tools/vim.md)
-* [我想做什么&我要做什么&我做了什么](want/README.md)
-  * [电影](want/movie.md)
-  * [TODO](want/want.md)

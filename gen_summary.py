@@ -37,7 +37,7 @@ SUMMARY = 'SUMMARY.md'  # SUMMARY.md 的文件名
 
 # SUMMARY.md 文件中的开头
 SUMMARY_TITLE = '# 目录'
-# SUMMARY.md 中的内容格式，可以自定义 * 为 - ，其他不能动
+# SUMMARY.md 中的内容格式，可以自定义 `*` 为 `-` ，其他不能动
 SUMMARY_CONT = '{s}* [{name}]({link})\n'
 # readme文件的名字，程序会检索各级文件夹，如果其中没有这个名字的readme文件，会自动生成一个
 README = 'README.md'
@@ -101,9 +101,9 @@ def gen_summary(path, tree):
         link_temp = {link: i for i, (n, link) in enumerate(tree)}
         # 是否增加summary
         if SUMMARY in link_temp:
-            f.write(SUMMARY_CONT.format(s='', name=(SUMMARY_TITLE + ' ')[2:SUMMARY_TITLE.find('\n')], link=SUMMARY)
-                    + '\n\n')
+            f.write(SUMMARY_CONT.format(s='', name=(SUMMARY_TITLE + ' ')[2:SUMMARY_TITLE.find('\n')], link=SUMMARY))
             tree = tree[:link_temp[SUMMARY]] + tree[link_temp[SUMMARY] + 1:]  # 防止原变量被更改
+        f.write('\n---\n\n')
         # 增加主要目录内容
         for name, link in tree:
             with open(os.path.join(path, link), 'r') as fi:
