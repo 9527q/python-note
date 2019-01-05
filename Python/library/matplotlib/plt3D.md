@@ -1,6 +1,6 @@
 # 简单的三维图像
 
-[文档](https://matplotlib.org/tutorials/toolkits/mplot3d.html)
+[官方文档](https://matplotlib.org/tutorials/toolkits/mplot3d.html)
 
 先得到三维图像对象
 
@@ -15,8 +15,8 @@ ax = fig.add_subplot(111, projection='3d')  # 1.0.0 之前的版本写法：`ax 
 ## 曲线图
 
 ```py
-# Axes3D： 3D 图像类，使用时用三维对象
-# *args：zs，与 xs、ys 等大小的数组，或者一个实数值
+# Axes3D： 3D 图像类，使用时用三维对象代替
+# zs：z 数据， 与 xs、ys 等大小的数组，或者一个实数值
 # zdir：哪个方向朝 z（上）
 Axes3D.plot(xs, ys, *args, zdir='z', **kwargs)
 ```
