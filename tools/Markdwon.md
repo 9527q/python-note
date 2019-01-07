@@ -4,9 +4,9 @@
 
 Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML（或者HTML）文档”。Markdown 文档的后缀为 .md。
 
-其实 Markdwon 就是指一种格式、一种标记，使用这种格式来编写纯文本文档，通过工具可以轻松的得到想要的样式。这个笔记就是通过编写 Markdown 文档再配合 gitbook 工具实现的。
+其实 Markdwon 就是指一种格式、一种标记，使用这种格式来编写纯文本文档，通过工具可以轻松的得到想要的样式。现在这个笔记就是通过编写 Markdown 文档再配合 gitbook 呈现出来的。
 
-单纯的一个 Markdown 文档里面只是包含格式标记的文字而已，它必须和一个工具相配合才能展现其力量。现在大多数的笔记（如印象、有道云）、博客网站（CSDN）、代码/文本编辑器（Pycharm、vscode、sublime）都直接支持或有插件支持编写 Markdown 格式的文档。这里的支持指的是能展现出来它的样子。还有一些文本编辑器是专门用来编写 Markdown 文档的。
+单纯的一个 Markdown 文档里面只是包含格式标记的文字而已，它必须和一个工具相配合才能展现其力量。现在很多的笔记软件（如印象、有道云）、博客网站（如CSDN、简书）、代码/文本编辑器（Pycharm、VS Code、Sublime）都直接支持或有插件支持编写、预览及导出 Markdown 格式文档。甚至有一些文本编辑器是专门用来编写 Markdown 文档的。
 
 ## 1. 准备一个支持 Markdown 的编辑器
 
@@ -152,7 +152,7 @@ Markdown 的特性
 > There is only one God, and his name is Death. And there is only one thing we say to Death: "Not today." ——*Game of Thrones*
 ```
 
-> There is only one God, and his name is Death. And there is only one thing we say to Death: "Not today."
+> There is only one God, and his name is Death. And there is only one thing we say to Death: "Not today." ——*Game of Thrones*
 
 #### 2.5.1 引用格式的妙用：包含关系
 
@@ -193,10 +193,18 @@ Markdown 的特性
 
 使用 `````` 和语言简称或全称标记代码
 
-![markdown_code](images/markdown_code.png)
+*文档写法*：
 
-```sh
-rm -rf /
+    ```py
+    # Python 代码
+    print('I am Groot.')
+    ```
+
+*渲染后*：
+
+```py
+# Python 代码
+print('I am Groot.')
 ```
 
 #### 2.6.3 ``

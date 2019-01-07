@@ -5,7 +5,7 @@
 
 ---
 
-* [OS](OS/README.md)
+* [操作系统](OS/README.md)
   * [Linux](OS/Linux.md)
   * [Windows](OS/Windows.md)
   * [macOS](OS/macOS.md)
@@ -24,14 +24,14 @@
     * [requests](Python/library/requests.md)
     * [Supervisor](Python/library/supervisor.md)
   * [《Python编程从入门到实践》](Python/pythonCrashCourse.md)
-  * [平面上的多个点的最短连接](Python/shortestLine.md)
+  * [平面上的多个点的最短连接](Python/shortest_line.md)
   * [标准库](Python/standardLibrary/README.md)
     * [multiprocessing](Python/standardLibrary/multiprocessing.md)
     * [os](Python/standardLibrary/os.md)
     * [socket](Python/standardLibrary/socket.md)
     * [string](Python/standardLibrary/string.md)
     * [threading](Python/standardLibrary/threading.md)
-  * [限制函数执行时间的装饰器](Python/threadLimitFuncTime.md)
+  * [限制函数执行时间的装饰器](Python/thread_limit_func_time.md)
   * [工具](Python/tools/README.md)
     * [Anaconda](Python/tools/Anaconda.md)
     * [PIP](Python/tools/PIP.md)
@@ -45,6 +45,7 @@
 * [感悟](learn.md)
 * [数学](math/README.md)
   * [概率论](math/probability.md)
+* [机器学习](ml/README.md)
 * [network](network/README.md)
   * [ftp ssh scp](network/FTP、ssh、scp.md)
   * [基础概念](network/netbase.md)
