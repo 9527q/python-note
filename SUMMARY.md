@@ -23,7 +23,7 @@
     * [re](Python/library/re.md)
     * [requests](Python/library/requests.md)
     * [Supervisor](Python/library/supervisor.md)
-  * [《Python编程从入门到实践》](Python/pythonCrashCourse.md)
+  * [Python编程从入门到实践](Python/pythonCrashCourse.md)
   * [平面上的多个点的最短连接](Python/shortest_line.md)
   * [标准库](Python/standardLibrary/README.md)
     * [multiprocessing](Python/standardLibrary/multiprocessing.md)
@@ -62,3 +62,4 @@
   * [VIM](tools/VIM.md)
   * [VS Code](tools/VSCode.md)
   * [confluence(wiki)](tools/confluence.md)
+  * [编程](tools/program.md)
