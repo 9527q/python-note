@@ -33,9 +33,3 @@
 - 《美丽心灵的永恒阳光》*Eternal Sunshine of the Spotless Mind*
   - [阮一峰解读](http://www.ruanyifeng.com/blog/2005/08/post_134.html)
 - all
-
----
-
-## 剧
-
-《大江大河》

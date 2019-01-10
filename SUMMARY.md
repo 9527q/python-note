@@ -5,6 +5,7 @@
 
 ---
 
+* [英文](English.md)
 * [操作系统](OS/README.md)
   * [Linux](OS/Linux.md)
   * [Windows](OS/Windows.md)
@@ -41,13 +42,13 @@
 * [数据库 DB](database/README.md)
   * [MySQL](database/MySQL.md)
   * [Redis](database/Redis.md)
-* [英文](english.md)
 * [感悟](learn.md)
 * [数学](math/README.md)
+  * [ARIMA 模型](math/arima.md)
   * [概率论](math/probability.md)
 * [机器学习](ml/README.md)
 * [network](network/README.md)
-  * [ftp ssh scp](network/FTP、ssh、scp.md)
+  * [ftp ssh scp](network/ftp_ssh_scp.md)
   * [基础概念](network/netbase.md)
   * [网络](network/network.md)
 * [TODO](todo/README.md)

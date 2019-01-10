@@ -4,8 +4,9 @@
 
 e | c
 -|-
+IDLE | Python’s Integrated Development and Learning Environment，Python 集成开发学习环境
 IDE | Integrated Development Environment 集成开发环境
-IDLE | Python’s Integrated Development and Learning Environment
+PEP | Python Enhancement Proposals，Python 增强建议书
 LTS | Long Term Support 长期支持版本
 UUID | Universally Unique Identifier 通用唯一识别码
 ORM | Object Relational Mapping 对象关系映射
@@ -14,6 +15,7 @@ ACM | Association for Computing Machinery 国际计算机学会
 ERP | Enterprise Resource Planning 企业资源规划
 OSS | Operation Support System 运营支撑系统
 CRM | Customer Relationship Management 客户关系管理
+BD | Business Development 商务拓展
 
 e | c | e | c
 -|-|-|-
