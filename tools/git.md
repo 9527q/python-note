@@ -17,6 +17,7 @@ blame | `git blame path/file` | 查看代码编写者（具体文件）
 add | `git add path` | 谨慎谨慎谨慎使用`git add .`不然会把本地的不该提交的东西提交的
  | `git add path/file` | 
 commit | `git commit --amend` | 修改上一次commit，内容是当前的暂存区，可以编辑提交内容比如刚刚commit的-m内容没写好想重新写比如有个小地方要改一下还不至于来一个新的commit（有可能是小失误没考虑周全）
+rebase | `git rebase -i adsf02d^` | 把这个版本之后的几个commit合并为一个，pick表示保留，f表示合并且不保留说明，然后末行模式执行x即可。
 
 ## 常见问题
 

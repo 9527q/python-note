@@ -11,6 +11,7 @@ LTS | Long Term Support 长期支持版本
 UUID | Universally Unique Identifier 通用唯一识别码
 ORM | Object Relational Mapping 对象关系映射
 SSO | Single Sign On 单点登陆
+ETL | Extract-Transform-Load 数据仓库技术（将数据从来源经过 抽取-交互转换-加载 到目的端的过程）
 ACM | Association for Computing Machinery 国际计算机学会
 ERP | Enterprise Resource Planning 企业资源规划
 OSS | Operation Support System 运营支撑系统
