@@ -10,8 +10,6 @@ Linux可以运行在服务器和其他大型平台之上，如大型计算机和
 
 通常情况下，Linux被打包成供个人计算机和服务器使用的Linux发行版，一些流行的主流Linux发布版，包括Debian（及其派生版本Ubuntu、Linux Mint）、Fedora（及其相关版本Red Hat Enterprise Linux、CentOS）和openSUSE等。
 
-sudo ifconfig 网卡 ip 是什么作用，不能上网
-
 ## 常用命令
 
 命令 | 使用 | 说明
@@ -39,6 +37,23 @@ tail | tail file | 查看文件 file 最后 10 行的内容
 /var/log/syslog | 系统日志
 /etc/hosts |
 /etc/apt/sources.list | 软件源
+
+## 查看端口
+
+1. `lsof -i:端口号`：查看某一端口的占用情况
+
+    ```bash
+    $ lsof -i:7001
+    COMMAND    PID   USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+    python2.7 7553 ikeliu    5u  IPv4 0x99bd5b3403b7df55      0t0  TCP *:afs3-callback (LISTEN)
+    ```
+
+2. `netstat -tunlp | grep 端口号`：查看指定端口号的进程情况
+    - -t (tcp) 仅显示tcp相关选项
+    - -u (udp)仅显示udp相关选项
+    - -n 拒绝显示别名，能显示数字的全部转化为数字
+    - -l 仅列出在Listen(监听)的服务状态
+    - -p 显示建立相关链接的程序名
 
 ## 修改Ubuntu软件源
 

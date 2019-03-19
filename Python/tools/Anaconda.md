@@ -1,6 +1,12 @@
 # Anaconda
 
-## 虚拟环境
+Anaconda是一个开源的Python发行版本，其包含了conda、Python等180多个科学包及其依赖项。
+
+官网下载还是挺慢的，推荐到[清华镜像源](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)下载适合自己系统的最新版本，据说是五分钟一同步的。
+
+## 命令
+
+虚拟环境相关
 
 ```sh
 # 列出所有虚拟环境

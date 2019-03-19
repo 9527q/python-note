@@ -1,25 +1,4 @@
-# MySQL
-
-- [ ] 体系结构
-- [ ] 存储结构
-- [ ] 聚集索引、联合索引
-- [ ] 备份和复制
-- [ ] 开发规范
-- [ ] 查询优化
-
-![mysql](images/mysql.png)
-
-MySQL（官方发音为/maɪ ˌɛskjuːˈɛl/“My S-Q-L”）原本是一个开放源代码的关系数据库管理系统，原开发者为瑞典的 MySQL AB 公司，该公司于 2008 年被昇（shēng）阳微系统（Sun Microsystems）收购。2009 年，甲骨文公司（Oracle）收购昇阳微系统公司，MySQL成为 Oracle 旗下产品。
-
-> The official way to pronounce “MySQL” is “My Ess Que Ell” (not “my sequel”), but we do not mind if you pronounce it as “my sequel” or in some other localized way. --[What is MySQL?](https://dev.mysql.com/doc/refman/8.0/en/what-is-mysql.html)
-
-MySQL 软件采用了双授权政策，分为社区版和商业版，在过去由于性能高、成本低、可靠性好，已经成为最流行的开源数据库，因此被广泛地应用在Internet上的中小型网站中。随着 MySQL 的不断成熟，它也逐渐用于更多大规模网站和应用，比如维基百科（2013年正式宣布将从MySQL迁移到MariaDB）、Google 和 Facebook 等网站。非常流行的开源软件组合LAMP中的“M”指的就是 MySQL。
-
-被甲骨文公司收购后，Oracle大幅调涨MySQL商业版的售价，且甲骨文公司不再支持另一个自由软件项目 OpenSolaris 的发展，因此导致自由软件社群们对于Oracle是否还会持续支持MySQL社群版有所隐忧，MySQL的创始人麦克尔·维德纽斯以MySQL为基础，成立分支计划MariaDB。
-
-> Michael Widenius（often called Monty）是 MySQL 的主要原作者，他的儿子叫 Max（MaxDB 也是一种 DBMS），大女儿和小女儿分别叫 My 和 Maria。
-
-MySQl 和 mysql 的写法都是对的，前者用在名字，而后者用在命令中。
+# 原理
 
 ## 存储引擎
 
@@ -121,60 +100,54 @@ mysql -u username -p database < datafile.sql
 
 ## 内部命令
 
-大小写不敏感
+- 大小写不敏感
 
-### 查看变量值
+查看变量值
 
 ```sql
 show variables like 'xxx';
 ```
 
-### 用户创建与授权
-
-创建用户
+新建变量
 
 ```sql
+set @dt = now();
+```
+
+用户创建与授权
+
+```sql
+-- 创建用户
 CREATE USER 'username'@'host' IDENTIFIED BY 'password';
 --'host'：该用户可登录的主机，本机可设为'localhost'，任意主机可设为'%'
 --'password'：密码，可以为空''，也可以不写从identified之后的东西，即不用密码就能登录数据库
-```
 
-授权
-
-```sql
+-- 授权
 GRANT privileges ON databasename.tablename TO 'username'@'host' WITH GRANT OPTION;
 --privileges：要设置的操作权限，比如select、insert、update等，全部权限的话就用all
 --所有数据库或者所有表名用*代替，比如*.*
 --with grant option表示被授权的用户有给别的用户授权的功能，不需要的话可以不加
-```
 
-撤销授权
-
-```sql
+-- 撤销授权
 REVOKE privilege ON databasename.tablename FROM 'username'@'host';
 --授权与取消授权时使用的db.tb应该使用相同的格式
-```
 
-查看权限
-
-```sql
+-- 查看权限
 SHOW GRANTS FOR 'username'@'host';
-```
 
-设置更改密码
-
-```sql
+-- 设置更改密码
 SET PASSWORD FOR 'username'@'host' = PASSWORD('newpassword');
 --如果是当前登录用户的话就不用写for ''@''了
-```
 
-删除用户
-
-```sql
+-- 删除用户
 DROP USER 'username'@'host';
 ```
 
-## 开启查询日志
+运行 .sql 文件
+
+```sql
+SOURCE filepath/filename.sql
+```
 
 日志开启与关闭
 
@@ -186,13 +159,6 @@ set global general_log=on;  --开启
 --设置开启的时候会向 .log 中写入一些东西，如果全都删了就无法记录了，此时关闭再开启即可
 
 set global general_log=off;  --关闭
-```
-
-## 增删改查
-
-```sql
-limit m  --查询前m个
-limit n,m  --查询第n个开始的m个
 ```
 
 ## 常见问题
