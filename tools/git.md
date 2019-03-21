@@ -1,5 +1,7 @@
 # GIT
 
+设置大小写敏感，`git config core.ignorecase false`
+
 ## 常用命令
 
 命令 | 示例 | 说明

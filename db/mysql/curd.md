@@ -33,6 +33,7 @@ from table2;
 -- ON DUPLICATE KEY
 -- 当遇到唯一值重复时则执行后面的 UPDATE 语句
 -- 是 MySQL 的特有语法，并不是 SQL 标准语法
+-- duplicate: v. 重复；复制 adj. 完全一样的
 INSERT INTO TABLE (a,b,c) VALUES
 (1,2,3),
 (2,5,7),
@@ -43,7 +44,7 @@ ON DUPLICATE KEY UPDATE b=VALUES(b);
 
 ## 删
 
-删除表的数据
+删除表
 
 ```sql
 DROP TABLE tb_name; -- 删除整个表，包括内部数据和表本身
