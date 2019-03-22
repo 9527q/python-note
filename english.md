@@ -17,6 +17,7 @@ ERP | Enterprise Resource Planning 企业资源规划
 OSS | Operation Support System 运营支撑系统
 CRM | Customer Relationship Management 客户关系管理
 BD | Business Development 商务拓展
+RC | Release Candidate 正式发行候选版
 
 e | c | e | c
 -|-|-|-
