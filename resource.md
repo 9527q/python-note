@@ -17,7 +17,7 @@
 - [**极客战记**](https://codecombat.163.com) 通过玩游戏学习**计算机科学**的平台
 - [**kaggle**](https://www.kaggle.com) 为开发商和数据科学家提供举办**机器学习**竞赛、托管数据库、编写和分享代码的平台
 - [V2EX](https://www.v2ex.com) way to explore，一个关于分享和探索的地方（光是注册账号就用了我十分钟，实在是回答不出来那些验证问题啊）
-- [996.ICU](http://996.icu) 程序员对996工作制的控诉，3.26 创建项目，晚上我知道时是 300 多 star，3.27
+- [996.ICU](http://996.icu) 程序员对996工作制的控诉，3.26 创建项目，晚上我知道时是 300 多 star，3.28 15:30 47k star，进入 GitHub star 排名前五十。
 
 ## 工具
 
@@ -80,3 +80,4 @@
 - Django admin使用：https://www.cnblogs.com/alan-babyblog/p/5812010.html
 - tensorflow。js恐龙游戏：http://www.ruanyifeng.com/blog/2018/11/weekly-issue-29.html
 - 树莓派搭建nas：http://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html
+- sql：https://www.cnblogs.com/xiao-momo/p/5810335.html
