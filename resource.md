@@ -34,22 +34,22 @@
 - **[kaggle](https://www.kaggle.com)**
   > 为开发商和数据科学家提供举办**机器学习**竞赛、托管数据库、编写和分享代码的平台
 - **[V2EX](https://www.v2ex.com)**
-  > way to explore，一个关于分享和探索的地方（光是注册账号就用了我十分钟，实在是回答不出来那些验证问题啊）
+  > “way to explore 一个关于分享和探索的地方” 一个社区（光是注册账号就用了我十分钟，实在是回答不出来那些验证问题啊）
 - **[996.ICU](http://996.icu)**
   > 程序员对 996 工作制的控诉，3.26 创建项目，晚上我知道时是 300 多 star，3.28 15:30 47k star，进入 GitHub star 排名前五十。
 - **[Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)**
-  > **数据结构**可视化
+  > **数据结构及相关算法**可视化
 - **[GitHub Learning Lab](https://lab.github.com/courses)**
   > GitHub 学习实验室
 - **[音乐测试工具 | METO API](https://api.i-meto.com/music.page)**
   > 多种音乐平台的在线搜索
 - **[清华大学开源镜像站](https://mirrors.tuna.tsinghua.edu.cn/)**
-- **[Markdown 语法说明 (简体中文版)**](https://www.appinn.com/markdown/#list)**
+- **[Markdown 语法说明 (简体中文版)](https://www.appinn.com/markdown/#list)**
 - **[SPEEDTEST](http://www.speedtest.net)**
   > 在线测试网速
 - **[颜色代码表](http://www.zhaozi.cn/img/color1.htm)**
   > 一些颜色机器对应的代码，可换color234.htm查看更多
-- **[在线 LaTeX 公式编辑器](www.codecogs.com/latex/eqneditor.php)**
+- **[在线 LaTeX 公式编辑器](http://www.codecogs.com/latex/eqneditor.php)**
 - **[在线检测电脑环境](http://www.gensee.com/test.html)**
   > 操作系统、浏览器、分辨率、端口等
 - **[sojson 特效 H5 实现详解](https://www.sojson.com/blog/127.html)** 
@@ -62,6 +62,12 @@
   > 在线的计算机科学该会的知识
 - **[42.zip](https://unforgettable.dk/)**
 - **[Urban Dictionary](https://www.urbandictionary.com/)**
+  > 英文方言在线词典
+- **[PC汇编语言](https://pacman128.github.io/static/pcasm-book-simplified-chinese.pdf)**
+  > 中文版PDF
+- **[数据结构和算法可视化](https://visualgo.net/zh)**
+  > 有中文版
+- **[航班实时追踪](http://flightadsb.variflight.com)**
 
 ## 工具
 
@@ -99,7 +105,6 @@
 - **[ECHARTS](https://echarts.baidu.com/)**
   > echarts，开源超棒的前端数据展示
 - **[jQuery插件库](http://www.jq22.com/)**
-- 
 
 ### 桌面工具
 
@@ -157,10 +162,10 @@
 
 ## 文章
 
-- **[如何用“认知”和“人性”来做NB的程序员](http://news.51cto.com/art/201901/590742.htm)**
+- **[如何用“认知”和“人性”来做NB的程序员？](http://news.51cto.com/art/201901/590742.htm)**
 - **[从月薪3万到月薪5000：无效努力，解决不了系统困境](https://blog.csdn.net/ityouknow/article/details/88097038)**
 - **[You Don't Need to Quit Your Job to Make](https://blog.stephsmith.io/you-dont-need-to-quit-your-job-to-make/)**
-- **[关于一些问题的回答](https://mp.weixin.qq.com/s?__biz=MzA4MzQzMTg3Mw==&mid=2686285856&idx=7&sn=fe5bbe7e87d8613260aeaa30f9a25c89&chksm=ba1f408e8d68c998a081c75cd74a40d46cf45eaef843ae9ba90bdacc3dd578fc7cb7fbcd2811&scene=0#rd)**
+- **[知乎上的44条神回复，针针见血，看完整个人通透多了](https://mp.weixin.qq.com/s?__biz=MzA4MzQzMTg3Mw==&mid=2686285856&idx=7&sn=fe5bbe7e87d8613260aeaa30f9a25c89&chksm=ba1f408e8d68c998a081c75cd74a40d46cf45eaef843ae9ba90bdacc3dd578fc7cb7fbcd2811&scene=0#rd)**
 
 ## TODO
 
@@ -180,3 +185,6 @@
 - 树莓派搭建nas：http://www.ruanyifeng.com/blog/2018/10/weekly-issue-27.html
 - sql：https://www.cnblogs.com/xiao-momo/p/5810335.html
 - gitbook：https://www.chengweiyang.cn/gitbook/introduction/README.html
+- Free Solo 国家地理纪录片
+- python matplotlib动态展示：https://blog.csdn.net/zyxhangiian123456789/article/details/89159530
+- 开源中国APP，一品威客，云沃客，码市，程序员客栈，自客
