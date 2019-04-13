@@ -61,4 +61,4 @@
 > 
 > 4.12 五 爸爸在家群里发的
 
-![father_words](./images/father_words)
+![father_words](./images/father_words.png)
