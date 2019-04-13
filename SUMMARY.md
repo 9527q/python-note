@@ -16,7 +16,7 @@
     * [原理](db/mysql/mysql.md)
   * [Redis](db/redis.md)
 * [英文](english.md)
-* [learn](learn/README.md)
+* [感悟](learn/README.md)
   * [14周 4.1-4.7](learn/week14.md)
   * [15周 4.8-4.14](learn/week15.md)
 * [数学](math/README.md)
