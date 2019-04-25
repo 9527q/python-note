@@ -9,7 +9,6 @@ def compress_text(text: str) -> str:
     O(n)
     """
     if not isinstance(text, str):
-        raise TypeError('compress_text() need a str, not {}'.format(type(text)))
     res, letter, num = '', '', 0
     for letter_new in text:
         if letter_new == letter:
