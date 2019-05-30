@@ -1,5 +1,9 @@
 # admin 站点
 
+/admin
+
+## 1. 注册
+
 ModelAdmin 类可以管理模型类在 admin 后台站点中的表现形式，一般放在 Django 应用（app）下的 admin.py 文件中。例如
 
 ```py
@@ -11,8 +15,9 @@ class AuthorAdmin(admin.ModelAdmin):
 admin.site.register(Author, AuthorAdmin)
 
 # 当然这个 ModelAdmin 类什么自定义内容都没有，所以会展示默认样式
-# 如果明确要展示默认样式，那么这个 ModelAdmin 完全可以不写，只是下面这一句就让 Author 模型类注册成功了，就会在 admin 站点中显示
-# admin.site.register(Author)
+# 如果明确要展示默认样式，那么这个 ModelAdmin 完全可以不写，只有下面这一句就让 Author 模型类注册成功了，就会在 admin 站点中显示
+
+admin.site.register(Author)
 ```
 
 > 还可以使用装饰器来完成注册
@@ -26,9 +31,9 @@ admin.site.register(Author, AuthorAdmin)
 >     pass
 > ```
 
-## ModelAdmin options
+## 2. ModelAdmin options
 
-### ModelAdmin.fields
+### 2.1 ModelAdmin.list_display
 
 添加和编辑页面展示哪些字段，给一个列表或元祖值，里面是字符串的字段名，显示的顺序就是你给定的顺序。可以有二级元祖，这样里面的内容会被放在一行里。
 
