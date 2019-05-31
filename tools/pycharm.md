@@ -8,20 +8,7 @@
 
 ## 安装
 
-[官方下载安装指南](https://www.jetbrains.com/pycharm/download/)
-
-不论 Windows、macOS 还是 Linux官网都有完善的安装指导，Ubuntu 16.04 及更高版甚至支持通过命令安装
-
-## 问题
-
-### Windows的PyCharm中输入法不跟随光标
-
-1. 关闭PyCharm
-2. 打开安装路径，将jre64（64位系统）文件取个别的名字，让PyCharm找不到它
-3. 下载[官方的java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
-    1. 选择接受许可
-    2. 选择对应系统
-4. 安装刚刚下载的java
+[官方下载安装指南](https://www.jetbrains.com/pycharm/download/)，不论 Windows、macOS 还是 Linux官网都有完善的安装指导，Ubuntu 16.04 及更高版甚至支持通过命令安装
 
 ## 快捷键
 
@@ -30,13 +17,13 @@
 o | i
 -|-
 ⌘ , | 打开设置
-⌘ ↩︎ | 在光标处换行(光标不动)(删除光标选中的内容)
+⌘ ↩︎ | 删除光标选中的内容并在光标处换行(光标不动)
 ⇧ ↩︎ | 光标所在行下面增加一行并移动光标到新行
-⌘ ⇧ F | 全局字符串搜索
+⌘ ⇧ F | 全局搜索
 
 ### Windows
 
-o | 作用
+o | i
 -|-
 Ctrl /   | 行注释/取消行注释
 Ctrl B | 查看源代码（Ctrl 左键）
@@ -62,5 +49,26 @@ Tab | 缩进
 
 ## 背景图片设置
 
-1. Shift Shift | 全局查找
-2. 输入set background image
+1. Shift Shift 打开全局查找
+2. 输入 set background image
+
+## 设置代码规范检查
+
+Preferences、设置、settings -> Editor -> Inspections
+
+在里面勾选自己想要的或者取消选中不想要的即可。
+
+## 设置79字符竖线
+
+设置 -> Editor -> Code Style -> Python -> Hard wrap at -> 79
+
+## 问题
+
+### Windows的PyCharm中输入法不跟随光标
+
+1. 关闭PyCharm
+2. 打开安装路径，将jre64（64位系统）文件取个别的名字，让PyCharm找不到它
+3. 下载[官方的java](https://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
+    1. 选择接受许可
+    2. 选择对应系统
+4. 安装刚刚下载的java
