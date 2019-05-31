@@ -11,7 +11,7 @@ $ python manage.py test <appname>.tests.<ATestCase>
 $ python manage.py test <appname>.tests.<ATestCase>.<test_func>
 ```
 
-## 创建测试数据库费时
+## 1. 创建测试数据库费时
 
 Django 有很多迁移文件，创建测试数据库时可以不考虑迁移文件而直接依照模型类创建，这样做会大大缩减创建测试数据库的时间。
 
@@ -19,7 +19,7 @@ Django 有很多迁移文件，创建测试数据库时可以不考虑迁移文�
 
 还有一个通过使用上次的测试数据库来缩短测试数据库创建时间的方案：3. 测试完毕后不删除测试数据库
 
-### 1. 重写 MIGRATION_MODULES
+### 1.1 重写 MIGRATION_MODULES
 
 在项目 settings.py 最后加入以下代码，测试时即可忽略迁移文件
 
@@ -42,7 +42,7 @@ if TESTING:
     MIGRATION_MODULES = DisableMigrations()
 ```
 
-### 2. 使用命令扩展：`django-test-without-migrations`
+### 1.2 使用命令扩展：`django-test-without-migrations`
 
 > Django 1.7+
 
@@ -78,7 +78,7 @@ if TESTING:
    $ python manage.py test -n <appname>
    ```
 
-### 3. 测试完毕后不删除测试数据库
+### 1.3 测试完毕后不删除测试数据库
 
 使用下面的测试命令，测试完毕后不删除测试数据库，下次再创建时就不需要那么多时间了
 
