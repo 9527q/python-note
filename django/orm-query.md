@@ -1,10 +1,67 @@
 # ORM 查询
 
-## 1. QuerySet
+## 1. QuerySet 查询集
 
 `django.db.models` 下面的一个类，`MyModel.objects.` 时得到的对象
 
-### 1.1 filter 过滤(sql-where)
+### 1.1 特性
+
+1. 惰性执行
+2. 缓存
+
+#### 1.1.1 惰性执行
+- 创建查询集不会访问数据库，直到调用数据时，才会访问数据库
+- 调用数据的情况包括迭代、序列化、与 if 合用
+
+```py
+qs = Store.object.filter(is_valid=True)  # 没有查询数据库，仅仅是创建了一个查询集
+print(qs.count())  # 23380 真正查询数据库的时候
+``` 
+
+#### 1.1.2 缓存
+
+通过 `._result_cache` 标记实现
+
+1. 只会查询一次数据库
+    ```py
+    books = Book.objects.filter(name__contains='刀')
+    for book in books:
+        print(book.name)
+    for book in books:
+        print(book.id)
+    ```
+2. 查询两次数据库
+    ```py
+    books = Book.objects.filter(name__contains='刀')
+    for book in books:
+        print(book.name)
+    for book in books:
+        print(book.id)
+    ```
+3. 查询两次数据库
+    ```py
+    qs = Store.object.filter(is_valid=True)  # 没有查询数据库，仅仅是创建了一个查询集
+    print(qs.count())  # 23380 真正查询数据库的时候
+    qs.update(is_valid=False)  # self._result_cache = None
+    print(qs.count())  # 0 又一次查询数据库
+    ```
+
+### 1.2 方法
+
+一句话方法：
+
+- `.update(**kwargs)`，sql-update，更新某些字段的值，返回更新了多少条数据
+- `.all()`，返回所有数据对象
+- `.first()`，返回第一条数据对象（不一定是按照id排序的）
+- `.last()`，返回最后一条数据对象
+- `.count()`，返回查询结果的数量
+- `.exists()`，返回查询结果是否存在
+- `.order_by(*field_names)`，根据某些字段进行排序，传入字段名，字段名前带 `'-'` 表示倒序
+- 可以进行切片或取下标操作，sql-limit，不支持负数索引
+
+#### 1.2.1 filter 和 exclude 过滤(sql-where)
+
+filter 保留符合条件的；exclude 剔除符合条件的
 
 1. 返回 QuerySet 对象
 2. 传入条件的格式是 `'字段名__条件'='值'`
@@ -25,7 +82,18 @@
   - `.filter(age__range=(9, 20)` 年龄在9和20之间
   - 左右全包含
 
-### 1.2 values 和 values_list 只取部分输出值(sql-只查某些字段的值)
+#### 1.2.2 get
+
+`.get(**kwargs)`
+
+- 返回单个数据对象
+- 不存在符合条件的数据时抛出 `MyModel.DoesNotExist`
+- 存在多跳符合条件的数据时抛出 `MyModel.MultipleObjectsReturned`
+- 会受前面的 filter 的影响
+
+#### 1.2.3 values 和 values_list 只取部分输出值(sql-只查某些字段的值)
+
+返回的对象只能再调用 QuerySet 的部分方法。
 
 - `.values(*fields)` 
   - 返回一个ValueQuerySet（QuerySet的子类）对象
@@ -37,7 +105,7 @@
   - 当 `fields` 只传递了一个字段名时，可以通过指定 `falt=True` 来将返回结果变成一维数据
   - 得到的对象可以直接和其他列表进行操作，也能被哈希。
 
-## 1.3 select_related 关联查询(sql-join)
+#### 1.2.4 select_related 关联查询(sql-join)
 
 `.select_related(*fields)`
 
@@ -56,13 +124,6 @@ Store.objects.select_related('brand').select_related()
 # 两个字段都会关联查询
 Store.objects.select_related('brand').select_related('sales')
 ```
-
-## 1.4 update 批量跟新(sql-update)
-
-`.update(**kwargs)`
-
-1. 更新指定字段的值
-2. 返回更新了多少条（int）
 
 ## 2. Q 对象
 
