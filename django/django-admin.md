@@ -35,16 +35,20 @@ admin.site.register(Author)
 
 ## 2. `ModelAdmin` options
 
-### 2.1 `list_display` 列表页展示哪些字段
+### 2.1 list_display、fields、readonly_fields
 
-一个元祖，指定列表页展示哪些字段，展示的顺序和元祖中的顺序一致。
+- **list_display** 一个元祖，指定列表页展示哪些字段，展示的顺序和元祖中的顺序一致
+- **fields** 元祖，编辑页展示哪些字段，控制顺序，内部小元祖可以让数据显示在同一行
+- **readonly_fields** 元祖，哪些字段只读不能被编辑
 
-还可以自定义展示字段，在本类下再加一个同名方法即可，再用  `diy_filed_name.short_description = 'xxx'` 来指定对应的标题栏值即可。
+可以自定义展示字段，在本类下再加一个同名方法，再用  `diy_filed_name.short_description = 'xxx'` 来指定对应的标题栏值即可。
 
 ```py
 @admin.register(Ticket)
 class TicketAdmin(admin.ModelAdmin):
     list_display = ('id', 'creator', 'count')  # count 是自定义字段
+    fields = (('id', 'creator'), 'count')  # id 和 creator 会显示在一行
+    readonly_fields = ('creator')  # 创建人字段不可被编辑
 
     def image(self, obj):  # 必有第二个参数，会传入数据对象
         return obj.lower_t.count()
@@ -53,8 +57,6 @@ class TicketAdmin(admin.ModelAdmin):
 ```
 
 ### 2.2 `empty_value_display` 空值显示样式
-
-
 
 可以规定列表页空值时显示什么（本来默认是显示 `-`）,例如
 
