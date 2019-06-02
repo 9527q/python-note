@@ -52,10 +52,12 @@ print(qs.count())  # 23380 真正查询数据库的时候
 
 - `.update(**kwargs)`，sql-update，更新某些字段的值，返回更新了多少条数据
 - `.all()`，返回所有数据对象
+- `.get(**kwargs)`，返回一条数据，可能报错：`MyModel.DoesNotExist`、`MyModel.MultipleObjectsReturned`
 - `.first()`，返回第一条数据对象（不一定是按照id排序的）
 - `.last()`，返回最后一条数据对象
 - `.count()`，返回查询结果的数量
 - `.exists()`，返回查询结果是否存在
+- `.distinct()`，去重（对查询结果去重，不是对数据库数据去重）
 - `.order_by(*field_names)`，根据某些字段进行排序，传入字段名，字段名前带 `'-'` 表示倒序
 - 可以进行切片或取下标操作，sql-limit，不支持负数索引
 
@@ -81,15 +83,6 @@ filter 保留符合条件的；exclude 剔除符合条件的
   - 即 `between xx and yy`
   - `.filter(age__range=(9, 20)` 年龄在9和20之间
   - 左右全包含
-
-#### 1.2.2 get
-
-`.get(**kwargs)`
-
-- 返回单个数据对象
-- 不存在符合条件的数据时抛出 `MyModel.DoesNotExist`
-- 存在多跳符合条件的数据时抛出 `MyModel.MultipleObjectsReturned`
-- 会受前面的 filter 的影响
 
 #### 1.2.3 values 和 values_list 只取部分输出值(sql-只查某些字段的值)
 
