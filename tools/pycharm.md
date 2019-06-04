@@ -14,38 +14,38 @@
 
 ### macOS
 
-o | i
--|-
-⌘ , | 打开设置
-⌘ ↩︎ | 删除光标选中的内容并在光标处换行(光标不动)
-⇧ ↩︎ | 光标所在行下面增加一行并移动光标到新行
-⌘ ⇧ F | 全局搜索
+options                                | explain
+---------------------------------------|-----------------------
+<kbd>⌘</kbd> <kbd>,</kbd>              | 打开设置
+<kbd>⌘</kbd> <kbd>↩</kbd>︎             | 删除光标选中的内容并在光标处换行(光标不动)
+<kbd>⇧</kbd> <kbd>↩</kbd>︎             | 光标所在行下面增加一行并移动光标到新行
+<kbd>⌘</kbd> <kbd>⇧</kbd> <kbd>F</kbd> | 全局搜索
 
 ### Windows
 
-o | i
--|-
-Ctrl /   | 行注释/取消行注释
-Ctrl B | 查看源代码（Ctrl 左键）
-Ctrl D | 在光标所在行下面复制当前行
-Ctrl X | 剪切光标所在行
-Ctrl F4 | 关闭当前py文件
-Ctrl F5 | 运行上一次运行的py文件
-Ctrl Alt L | 整理代码（缩进、空格等）
-Ctrl Shift 数字 | 当前行加书签
-Ctrl Shift F10 | 运行光标所在py文件
-Ctrl Shift ↑、↓ | 移动当前行
-Alt 1 | 打开/关闭资源管理器
-Alt 4 | 打开/关闭运行状态窗口
-Alt ←、→ | 在打开的py文件之间切换
-Alt Insert | 当前位置新建文件
-Alt 左键 | 选中多个光标位置
-Shift F6 | 修改文件或目录名
-Shift Enter | 在光标所在行下创建行并缩进至适当位置
-Shift Tab | 回退缩进
-Shift Shift | 全局查找
-中键滑动 | 选中多个光标位置
-Tab | 缩进
+options                                            | explain
+---------------------------------------------------|-------------------
+<kbd>Ctrl</kbd> <kbd>/</kbd>                       | 行注释/取消行注释
+<kbd>Ctrl</kbd> <kbd>B</kbd>                       | 查看源代码（Ctrl 左键）
+<kbd>Ctrl</kbd> <kbd>D</kbd>                       | 在光标所在行下面复制当前行
+<kbd>Ctrl</kbd> <kbd>X</kbd>                       | 剪切光标所在行
+<kbd>Ctrl</kbd> <kbd>F4</kbd>                      | 关闭当前py文件
+<kbd>Ctrl</kbd> <kbd>F5</kbd>                      | 运行上一次运行的py文件
+<kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>L</kbd>        | 整理代码（缩进、空格等）
+<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>数字键</kbd> | 当前行加书签
+<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>F10</kbd>    | 运行光标所在py文件
+<kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>↕️</kbd>     | 移动当前行
+<kbd>Alt</kbd> <kbd>1</kbd>                        | 打开/关闭资源管理器
+<kbd>Alt</kbd> <kbd>4</kbd>                        | 打开/关闭运行状态窗口
+<kbd>Alt</kbd> <kbd>←、→</kbd>                      | 在打开的py文件之间切换
+<kbd>Alt</kbd> <kbd>Insert</kbd>                   | 当前位置新建文件
+<kbd>Alt</kbd> <kbd>左键</kbd>                     | 选中多个光标位置
+<kbd>Shift</kbd> <kbd>F6</kbd>                     | 修改文件或目录名
+<kbd>Shift</kbd> <kbd>Enter</kbd>                  | 在光标所在行下创建行并缩进至适当位置
+<kbd>Shift</kbd> <kbd>Tab</kbd>                    | 回退缩进
+<kbd>Shift</kbd> <kbd>Shift</kbd>                  | 全局查找
+中键摁住滑动鼠标                                   | 选中多个光标位置
+<kbd>Tab</kbd>                                     | 缩进
 
 ## 背景图片设置
 
