@@ -7,6 +7,7 @@
 
 目录
 - [Python 2 以来的新东西](./diff23/README.md)
+- [标准库](./standard-library/README.md)
 
 ## 优点
 
