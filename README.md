@@ -1,11 +1,12 @@
-# Python
-
 ![python](images/python.png)
 
 - Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。
 - 由荷兰人 *Guido van Rossum* 于 1989 年底发明，第一个公开发行版发行于1991年
 - 像 Perl 语言一样，Python 源代码同样遵循 GPL(GNU General Public License)协议
 - Python 的解释器如今有多个语言实现，我们常用的是 CPython（官方版本的C语言实现），其他还有 Jython（可以运行在Java平台）、IronPython（可以运行在.NET和Mono平台）、PyPy（Python实现的，支持JIT即时编译）
+
+目录
+- [Python 2 以来的新东西](./diff23/README.md)
 
 ## 优点
 
