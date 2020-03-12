@@ -1,6 +1,6 @@
 tokenize
 ========
-
+[TOC]
 > token: n. 象征；标志； adj. 作为标志的；
 > -ize: suff. 使成...状态；使...化；
 > tokenize：标识化；标记化；
@@ -10,43 +10,5 @@ tokenize
 为了简化标记流（token stream）的处理，所有的运算符（[Operators](###Operators)）
 
 ## 附表
-a
-
-a
-
-
-a
-
-
-a
-
-
-a
-
-a
-
-a
-a
-a
-a
-
-
-
-a
-a
-a
-a
-
-a
-a
-
-a
-
-a
-a
-a
 
 ### Operators
-
-j
-j
