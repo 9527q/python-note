@@ -1,3 +1,8 @@
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
+
+Python
+======
+
 ![python](images/python.png)
 
 - Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言。
@@ -52,4 +57,3 @@
 Ctrl D 或者执行 `exit()` 退出
 
 在 IPython 中使用 `Ctrl D` 后还需要确认一下才能退出
-
