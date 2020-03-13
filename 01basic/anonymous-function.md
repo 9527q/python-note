@@ -51,16 +51,34 @@ func = lambda a, b=2: a + b
 
 总之，所有普通函数能实现的参数格式，都可以用在匿名函数上面
 
-### 现实中的应用
+### 实际应用举例
 
-一般使用map函数的时候会用到
+如果一个地方不关注函数的名字，不关注其说明文档，内容很简洁短小，且这个函数只有这一个地方会用到，那么就应该使用匿名函数。
 
-map函数接收两个参数，第一个是函数名，第二个是可迭代对象例如列表
+举两个例子
 
-其意义是将每一个对象都扔到函数中操作一下，把全部的函数返回值作为结果
+1. `map` 有时会和 `lambda` 一起使用。有时候 `map` 要进行的处理是比较简单且只有在这一个地方会用到的，那 `lambda` 在这里就是很好的使用情况。
 
-比如，将一个列表里每个数都加2
+假设有一个 `List[int]` 格式的列表，想求每一个数的倒数，就可以使用匿名函数配合 `map` 来完成
+
 ```py
-list_1 = [1, 2, 3, 4, 5]
-list_2 = list(map(lambda num: num+2, list_1))  # list_2 就变成了 [3, 4, 5, 6, 7]
+list_num = [1, 2, 3, 0, 4, 5, -1]
+iter_nums_inverse = map(lambda n: 1/n if n else None, list_num)
+
+print(list(iter_nums_inverse))  # ==> [1.0, 0.5, 0.3333333333333333, None, 0.25, 0.2, -1.0]
+```
+
+2. 定义一个 `defaultdict` 的时候经常用到。因为默认值字典需要给一个可调用的初始值，Python 自带的类型有时是不能满足需要的，那 `lambda` 在这里就很方便了。
+
+假设图像上有几个关键点，需要把他们的坐标用字典存储，如果没给定默认为 `(0, 0)`，那么用两者配合就很好完成了
+
+```py
+from collections import defaultdict
+
+dict_point = defaultdict(lambda : (0, 0))
+
+dict_point['X'] = (2, 5)
+print(dict_point['X'])  # ==> (2, 5)
+print(dict_point['Y'])  # ==> (0, 0)
+print(dict_point['Z'])  # ==> (0, 0)
 ```
