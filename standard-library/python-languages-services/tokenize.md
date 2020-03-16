@@ -127,7 +127,7 @@ tokenize
 python -m tokenize [-e] [filename.py]
 ```
 
-[有以下可选参数](# CMDE)
+有以下可选参数
 
 ### -h,&ensp;--help
 
@@ -155,10 +155,11 @@ def decistmt(s):
     >>> decistmt(s)
     "print (+Decimal ('21.3e-5')*-Decimal ('.1234')/Decimal ('81.7'))"
 
-    指数的格式是从 C 库继承的，已知案例有 “e-007”（Windows）和"e-07"（非 Windows）。因为这里只展示了12位，第十三位又不接近5，所以剩下的输出是独立于平台的。
+    在不同的平台，下面这句的结果可能不同。第一个是在 macOS，第二个是在 Win10。
 
     >>> exec(s)
-    -3.21716034272e-0...7
+    -3.21716034272e-07
+    -3.217160342717258e-07
 
     在所有平台上，Decimal 的输出应该都是一致的。
 
@@ -303,6 +304,8 @@ with open('hello.py', 'rb') as f:
 中一致，只是多了一些信息。
 
 ## 附表
+
+### [所有的标记类型](https://docs.python.org/zh-cn/3/library/token.html#token.ENCODING)
 
 ### Operators
 
