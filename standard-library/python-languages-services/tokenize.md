@@ -1,4 +1,4 @@
-tokenize<!-- ✓ -->
+tokenize
 ========
 
 > token: n. 象征；标志； adj. 作为标志的；
