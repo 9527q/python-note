@@ -86,6 +86,33 @@ ProUserId = NewType('ProUserId', UserId)
 > - 类型别名的两者完全等效，可以用于简化复杂签名
 > - `NewType` 声明一个类型是另一种类型的子类，那么父类类型的值不能用于子类类型标记的地方，可以用于以最小的运行时间成本防止逻辑错误。
 
+## Callable
+
+可调用的。
+
+标注参数类型和返回值类型： `Callable[[Arg1Type, Arg2Type], ReturnType]`。
+
+例如：
+
+```py
+from typing import Callable
+
+def feeder(get_next_item: Callable[[], str]) -> None:
+    ...
+
+def async_query(on_success: Callable[[int], None],
+                on_error: Callable[[int, Exception], None]) -> None:
+    ...
+```
+
+不指定参数类型仅指定返回值类型时，可以使用省略号代替 `Callable[..., ReturnType]`。
+
+## 范型（Generic）
+
+通用类型。
+
+抽象基类也扩展为支持抽取操作
+
 ## 类、函数和装饰器
 
 ### typing.Union
