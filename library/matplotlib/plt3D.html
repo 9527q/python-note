@@ -1,0 +1,977 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>简单的三维图像 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../pillow.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../SUMMARY.html">
+            
+                <a href="../../SUMMARY.html">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../01basic/">
+            
+                <a href="../../01basic/">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../../class.md">
+            
+                <span>
+            
+                    
+                    类与对象
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../compress_text.md">
+            
+                <span>
+            
+                    
+                    压缩字符串
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../../convert_path.md">
+            
+                <span>
+            
+                    
+                    转换路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../../django/">
+            
+                <a href="../../django/">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../../django/admin.md">
+            
+                <span>
+            
+                    
+                    admin 站点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../../django/orm_def.md">
+            
+                <span>
+            
+                    
+                    ORM 定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../../django/orm_query.md">
+            
+                <span>
+            
+                    
+                    ORM 查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.4" data-path="../../django/test.md">
+            
+                <span>
+            
+                    
+                    测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.6.1" data-path="../celery.html">
+            
+                <a href="../celery.html">
+            
+                    
+                    celery
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.2" data-path="../flake8.html">
+            
+                <a href="../flake8.html">
+            
+                    
+                    flake8
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.3" data-path="../kuozhanbao.html">
+            
+                <a href="../kuozhanbao.html">
+            
+                    
+                    line_profiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.4" data-path="../lxml.html">
+            
+                <a href="../lxml.html">
+            
+                    
+                    lxml
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Matplotlib
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.6.5.1" data-path="plt3D.html">
+            
+                <a href="plt3D.html">
+            
+                    
+                    简单的三维图像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.6" data-path="../pillow.html">
+            
+                <a href="../pillow.html">
+            
+                    
+                    Pillow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.7" data-path="../re.html">
+            
+                <a href="../re.html">
+            
+                    
+                    re
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.8" data-path="../requests.html">
+            
+                <a href="../requests.html">
+            
+                    
+                    requests
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6.9" data-path="../supervisor.html">
+            
+                <a href="../supervisor.html">
+            
+                    
+                    Supervisor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../../op_summary.md">
+            
+                <span>
+            
+                    
+                    操作汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../../python_crash_course.md">
+            
+                <span>
+            
+                    
+                    Python编程从入门到实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../../shortest_line.md">
+            
+                <span>
+            
+                    
+                    平面上的多个点的最短连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="../../standard_library/README.md">
+            
+                <span>
+            
+                    
+                    标准库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.10.1" data-path="../../standard_library/abc.md">
+            
+                <span>
+            
+                    
+                    abc
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.2" data-path="../../standard_library/multiprocessing.md">
+            
+                <span>
+            
+                    
+                    multiprocessing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.3" data-path="../../standard_library/os.md">
+            
+                <span>
+            
+                    
+                    os
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.4" data-path="../../standard_library/socket.md">
+            
+                <span>
+            
+                    
+                    socket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.5" data-path="../../standard_library/string.md">
+            
+                <span>
+            
+                    
+                    string
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10.6" data-path="../../standard_library/threading.md">
+            
+                <span>
+            
+                    
+                    threading
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="../../thread_limit_func_time.md">
+            
+                <span>
+            
+                    
+                    限制函数执行时间的装饰器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="../../tools/">
+            
+                <a href="../../tools/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.12.1" data-path="../../tools/anaconda.html">
+            
+                <a href="../../tools/anaconda.html">
+            
+                    
+                    Anaconda
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12.2" data-path="../../tools/ipython.html">
+            
+                <a href="../../tools/ipython.html">
+            
+                    
+                    ipython
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12.3" data-path="../../tools/jupyter.md">
+            
+                <span>
+            
+                    
+                    Jupyter Notebook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12.4" data-path="../../tools/pip.html">
+            
+                <a href="../../tools/pip.html">
+            
+                    
+                    PIP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12.5" data-path="../../tools/pycharm.html">
+            
+                <a href="../../tools/pycharm.html">
+            
+                    
+                    Pycharm
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="../../typein.md">
+            
+                <span>
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="../../ugly_number.md">
+            
+                <span>
+            
+                    
+                    丑数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="../../warn.md">
+            
+                <span>
+            
+                    
+                    注意
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >简单的三维图像</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B80;&#x5355;&#x7684;&#x4E09;&#x7EF4;&#x56FE;&#x50CF;">&#x7B80;&#x5355;&#x7684;&#x4E09;&#x7EF4;&#x56FE;&#x50CF;</h1>
+<p><a href="https://matplotlib.org/tutorials/toolkits/mplot3d.html" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<p>&#x5148;&#x5F97;&#x5230;&#x4E09;&#x7EF4;&#x56FE;&#x50CF;&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-py"><span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D  <span class="hljs-comment"># &#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x5750;&#x6807;&#x8F74;</span>
+
+fig = plt.figure()
+ax = fig.add_subplot(<span class="hljs-number">111</span>, projection=<span class="hljs-string">&apos;3d&apos;</span>)  <span class="hljs-comment"># 1.0.0 &#x4E4B;&#x524D;&#x7684;&#x7248;&#x672C;&#x5199;&#x6CD5;&#xFF1A;`ax = Axes3D(fig)`</span>
+</code></pre>
+<h2 id="&#x66F2;&#x7EBF;&#x56FE;">&#x66F2;&#x7EBF;&#x56FE;</h2>
+<pre><code class="lang-py"><span class="hljs-comment"># Axes3D&#xFF1A; 3D &#x56FE;&#x50CF;&#x7C7B;&#xFF0C;&#x4F7F;&#x7528;&#x65F6;&#x7528;&#x4E09;&#x7EF4;&#x5BF9;&#x8C61;&#x4EE3;&#x66FF;</span>
+<span class="hljs-comment"># zs&#xFF1A;z &#x6570;&#x636E;&#xFF0C; &#x4E0E; xs&#x3001;ys &#x7B49;&#x5927;&#x5C0F;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x6216;&#x8005;&#x4E00;&#x4E2A;&#x5B9E;&#x6570;&#x503C;</span>
+<span class="hljs-comment"># zdir&#xFF1A;&#x54EA;&#x4E2A;&#x65B9;&#x5411;&#x671D; z&#xFF08;&#x4E0A;&#xFF09;</span>
+Axes3D.plot(xs, ys, *args, zdir=<span class="hljs-string">&apos;z&apos;</span>, **kwargs)
+</code></pre>
+<p>&#x4F8B;&#x5B50;</p>
+<pre><code class="lang-py"><span class="hljs-comment"># This import registers the 3D projection, but is otherwise unused.</span>
+<span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D  <span class="hljs-comment"># noqa: F401 unused import</span>
+
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+
+
+plt.rcParams[<span class="hljs-string">&apos;legend.fontsize&apos;</span>] = <span class="hljs-number">10</span>
+
+fig = plt.figure()
+ax = fig.gca(projection=<span class="hljs-string">&apos;3d&apos;</span>)
+
+<span class="hljs-comment"># Prepare arrays x, y, z</span>
+theta = np.linspace(<span class="hljs-number">-4</span> * np.pi, <span class="hljs-number">4</span> * np.pi, <span class="hljs-number">100</span>)
+z = np.linspace(<span class="hljs-number">-2</span>, <span class="hljs-number">2</span>, <span class="hljs-number">100</span>)
+r = z**<span class="hljs-number">2</span> + <span class="hljs-number">1</span>
+x = r * np.sin(theta)
+y = r * np.cos(theta)
+
+ax.plot(x, y, z, label=<span class="hljs-string">&apos;parametric curve&apos;</span>)  <span class="hljs-comment"># &#x53C2;&#x6570;&#x66F2;&#x7EBF;</span>
+ax.legend()
+
+plt.show()
+</code></pre>
+<p><img src="images/plt3D_line_demo.png" alt="plt3D_line_demo"></p>
+<h3 id="&#x6563;&#x70B9;&#x56FE;">&#x6563;&#x70B9;&#x56FE;</h3>
+<pre><code class="lang-py"><span class="hljs-comment"># s&#xFF1A;size</span>
+<span class="hljs-comment"># c&#xFF1A;color</span>
+<span class="hljs-comment"># depthshade&#xFF1A;&#x662F;&#x5426;&#x6309;&#x6DF1;&#x5EA6;&#x51B3;&#x5B9A;&#x989C;&#x8272;&#x6DF1;&#x6D45;</span>
+Axes3D.scatter(xs, ys, zs=<span class="hljs-number">0</span>, zdir=<span class="hljs-string">&apos;z&apos;</span>, s=<span class="hljs-number">20</span>, c=<span class="hljs-keyword">None</span>, depthshade=<span class="hljs-keyword">True</span>, *args, **kwargs)
+</code></pre>
+<pre><code class="lang-py"><span class="hljs-comment"># This import registers the 3D projection, but is otherwise unused.</span>
+<span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D  <span class="hljs-comment"># noqa: F401 unused import</span>
+
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+<span class="hljs-comment"># Fixing random state for reproducibility. &#x53EF;&#x590D;&#x73B0;</span>
+np.random.seed(<span class="hljs-number">19950901</span>)
+
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">randrange</span><span class="hljs-params">(n, vmin, vmax)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos;
+    Helper function to make an array of random numbers having shape (n, )
+    with each number distributed Uniform(vmin, vmax).
+    &apos;&apos;&apos;</span>
+    <span class="hljs-keyword">return</span> (vmax - vmin)*np.random.rand(n) + vmin
+
+fig = plt.figure()
+ax = fig.add_subplot(<span class="hljs-number">111</span>, projection=<span class="hljs-string">&apos;3d&apos;</span>)
+
+n = <span class="hljs-number">100</span>
+
+<span class="hljs-comment"># For each set of style and range settings, plot n random points in the box</span>
+<span class="hljs-comment"># defined by x in [23, 32], y in [0, 100], z in [zlow, zhigh].</span>
+<span class="hljs-keyword">for</span> c, m, zlow, zhigh <span class="hljs-keyword">in</span> [(<span class="hljs-string">&apos;r&apos;</span>, <span class="hljs-string">&apos;o&apos;</span>, <span class="hljs-number">-50</span>, <span class="hljs-number">-25</span>), (<span class="hljs-string">&apos;b&apos;</span>, <span class="hljs-string">&apos;^&apos;</span>, <span class="hljs-number">-30</span>, <span class="hljs-number">-5</span>)]:
+    xs = randrange(n, <span class="hljs-number">23</span>, <span class="hljs-number">32</span>)
+    ys = randrange(n, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>)
+    zs = randrange(n, zlow, zhigh)
+    ax.scatter(xs, ys, zs, c=c, marker=m)
+
+ax.set_xlabel(<span class="hljs-string">&apos;X Label&apos;</span>)
+ax.set_ylabel(<span class="hljs-string">&apos;Y Label&apos;</span>)
+ax.set_zlabel(<span class="hljs-string">&apos;Z Label&apos;</span>)
+
+plt.show()
+</code></pre>
+<p><img src="images/plt3D_scatter_demo.png" alt="plt3D_scatter_demo"></p>
+<h3 id="&#x7EBF;&#x6846;&#x56FE;">&#x7EBF;&#x6846;&#x56FE;</h3>
+<pre><code class="lang-py"><span class="hljs-comment"># X, Y, Z : 2d arrays</span>
+<span class="hljs-comment">#   Data values.</span>
+<span class="hljs-comment"># rcount, ccount : int</span>
+<span class="hljs-comment">#   &#x5404;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x91C7;&#x6837;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 50&#xFF0C;2.0 &#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#x624D;&#x6709;&#x3002;&#x4E0E;&#x91C7;&#x6837;&#x6B65;&#x957F;&#x4E92;&#x65A5;&#xFF0C;&#x90FD;&#x4E3A;&#x9ED8;&#x8BA4;&#x503C;&#x5219;&#x91C7;&#x6837;&#x6570;&#x91CF;&#x6709;&#x6548;&#xFF0C;&#x90FD;&#x7ED9;&#x5B9A;&#x5219;&#x62A5;&#x9519;&#x3002;</span>
+<span class="hljs-comment"># rstride&#xFF0C;cstride&#xFF1A; int</span>
+<span class="hljs-comment">#   &#x5404;&#x4E2A;&#x65B9;&#x5411;&#x4E0A;&#x7684;&#x91C7;&#x6837;&#x6B65;&#x957F;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A; 1&#xFF0C;</span>
+<span class="hljs-comment">#   &apos;classic&apos; &#x6A21;&#x5F0F;&#x4F1A;&#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x91C7;&#x6837;&#x6B65;&#x957F;&#x3002;</span>
+Axes3D.plot_wireframe(X, Y, Z, *args, **kwargs)
+</code></pre>
+<pre><code class="lang-py"><span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> axes3d
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+
+
+fig = plt.figure()
+ax = fig.add_subplot(<span class="hljs-number">111</span>, projection=<span class="hljs-string">&apos;3d&apos;</span>)
+
+<span class="hljs-comment"># Grab some test data.</span>
+X, Y, Z = axes3d.get_test_data(<span class="hljs-number">0.05</span>)
+
+<span class="hljs-comment"># Plot a basic wireframe.</span>
+ax.plot_wireframe(X, Y, Z, rstride=<span class="hljs-number">10</span>, cstride=<span class="hljs-number">10</span>)
+
+plt.show()
+</code></pre>
+<p><img src="images/plt3D_wireframe_demo.png" alt="plt3D_wireframe_demo"></p>
+<h3 id="&#x66F2;&#x9762;">&#x66F2;&#x9762;</h3>
+<pre><code class="lang-py"><span class="hljs-comment"># X, Y, Z : 2d arrays&#xFF0C;Data values.</span>
+<span class="hljs-comment"># rcount, ccount : int &#x9ED8;&#x8BA4; 50</span>
+<span class="hljs-comment"># rstride, cstride : int &#x9ED8;&#x8BA4; 10</span>
+<span class="hljs-comment"># color : color-like</span>
+<span class="hljs-comment"># cmap : Colormap</span>
+<span class="hljs-comment"># facecolors : array-like of colors.</span>
+<span class="hljs-comment"># norm : Normalize : Normalization for the colormap.</span>
+<span class="hljs-comment"># vmin, vmax : float : Bounds for the normalization.</span>
+<span class="hljs-comment"># shade : bool : Whether to shade the face colors.</span>
+Axes3D.plot_surface(X, Y, Z, *args, norm=<span class="hljs-keyword">None</span>, vmin=<span class="hljs-keyword">None</span>, vmax=<span class="hljs-keyword">None</span>, lightsource=<span class="hljs-keyword">None</span>, **kwargs)
+</code></pre>
+<p>&#x4F8B;&#x5B50;1</p>
+<pre><code class="lang-py"><span class="hljs-comment"># This import registers the 3D projection, but is otherwise unused.</span>
+<span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D  <span class="hljs-comment"># noqa: F401 unused import</span>
+
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">from</span> matplotlib <span class="hljs-keyword">import</span> cm
+<span class="hljs-keyword">from</span> matplotlib.ticker <span class="hljs-keyword">import</span> LinearLocator, FormatStrFormatter
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+
+fig = plt.figure()
+ax = fig.gca(projection=<span class="hljs-string">&apos;3d&apos;</span>)
+
+<span class="hljs-comment"># Make data.</span>
+X = np.arange(<span class="hljs-number">-5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.25</span>)
+Y = np.arange(<span class="hljs-number">-5</span>, <span class="hljs-number">5</span>, <span class="hljs-number">0.25</span>)
+X, Y = np.meshgrid(X, Y)
+R = np.sqrt(X**<span class="hljs-number">2</span> + Y**<span class="hljs-number">2</span>)
+Z = np.sin(R)
+<span class="hljs-comment"># Plot the surface.</span>
+surf = ax.plot_surface(X, Y, Z, cmap=cm.Blues,
+                       linewidth=<span class="hljs-number">0</span>, antialiased=<span class="hljs-keyword">True</span>)  <span class="hljs-comment"># anti-aliasing&#xFF0C;AA&#xFF0C;&#x6297;&#x952F;&#x9F7F;</span>
+
+<span class="hljs-comment"># Customize the z axis.</span>
+ax.set_zlim(<span class="hljs-number">-1.01</span>, <span class="hljs-number">1.01</span>)  <span class="hljs-comment"># z &#x8F74;&#x523B;&#x5EA6;&#x8303;&#x56F4;</span>
+ax.zaxis.set_major_locator(LinearLocator(<span class="hljs-number">10</span>))  <span class="hljs-comment"># z &#x8F74;&#x523B;&#x5EA6;&#x6570;&#x91CF;</span>
+ax.zaxis.set_major_formatter(FormatStrFormatter(<span class="hljs-string">&apos;%.02f&apos;</span>))  <span class="hljs-comment"># z &#x8F74;&#x523B;&#x5EA6;&#x663E;&#x793A;&#x683C;&#x5F0F;</span>
+
+<span class="hljs-comment"># Add a color bar which maps values to colors.</span>
+fig.colorbar(surf, shrink=<span class="hljs-number">0.5</span>, aspect=<span class="hljs-number">5</span>)  <span class="hljs-comment"># shrink&#xFF1A;&#x6536;&#x7F29;&#x6BD4;&#x4F8B;&#xFF1B;aspect&#xFF1A;&#x9AD8;&#x5BBD;&#x6BD4;</span>
+plt.show()
+</code></pre>
+<p><img src="images/plt3D_surface_demo00.png" alt="plt3D_surface_demo00"></p>
+<p>&#x4F8B;&#x5B50;2</p>
+<pre><code class="lang-py"><span class="hljs-comment"># This import registers the 3D projection, but is otherwise unused.</span>
+<span class="hljs-keyword">from</span> mpl_toolkits.mplot3d <span class="hljs-keyword">import</span> Axes3D  <span class="hljs-comment"># noqa: F401 unused import</span>
+
+<span class="hljs-keyword">import</span> matplotlib.pyplot <span class="hljs-keyword">as</span> plt
+<span class="hljs-keyword">import</span> numpy <span class="hljs-keyword">as</span> np
+
+
+fig = plt.figure()
+ax = fig.add_subplot(<span class="hljs-number">111</span>, projection=<span class="hljs-string">&apos;3d&apos;</span>)
+
+<span class="hljs-comment"># Make data</span>
+u = np.linspace(<span class="hljs-number">0</span>, <span class="hljs-number">2</span> * np.pi, <span class="hljs-number">100</span>)  <span class="hljs-comment"># &#x4E24;&#x7AEF;&#x503C;&#xFF0C;&#x4E2A;&#x6570;</span>
+v = np.linspace(<span class="hljs-number">0</span>, np.pi, <span class="hljs-number">100</span>)
+x = <span class="hljs-number">10</span> * np.outer(np.cos(u), np.sin(v))
+y = <span class="hljs-number">10</span> * np.outer(np.sin(u), np.sin(v))
+z = <span class="hljs-number">10</span> * np.outer(np.ones(np.size(u)), np.cos(v))
+
+<span class="hljs-comment"># Plot the surface</span>
+ax.plot_surface(x, y, z, color=<span class="hljs-string">&apos;b&apos;</span>)
+plt.show()
+</code></pre>
+<p><img src="images/plt3D_surface_demo01.png" alt="plt3D_surface_demo01"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Matplotlib">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../pillow.html" class="navigation navigation-next " aria-label="Next page: Pillow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"简单的三维图像","level":"2.6.5.1","depth":3,"next":{"title":"Pillow","level":"2.6.6","depth":2,"path":"library/pillow.md","ref":"library/pillow.md","articles":[]},"previous":{"title":"Matplotlib","level":"2.6.5","depth":2,"path":"library/matplotlib/README.md","ref":"library/matplotlib/README.md","articles":[{"title":"简单的三维图像","level":"2.6.5.1","depth":3,"path":"library/matplotlib/plt3D.md","ref":"library/matplotlib/plt3D.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"library/matplotlib/plt3D.md","mtime":"2020-05-21T08:30:35.942Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-21T09:10:16.509Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
