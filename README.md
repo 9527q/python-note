@@ -1,6 +1,8 @@
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 ![](https://img.shields.io/github/repo-size/9527q/python-note.svg?label=Repo%20size&style=flat-square)
 
+[**gitbook**](https://9527q.github.io/python-note/)
+
 Python
 ======
 
