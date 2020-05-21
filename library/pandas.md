@@ -1,4 +1,4 @@
-# [![pandas](images/pandas_logo.png)](http://pandas.pydata.org/)
+# pandas
 
 Python Data Analysis Library
 

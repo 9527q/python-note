@@ -1,6 +1,6 @@
 # Jupyter Notebook
 
-**代码块**：一个块就叫一个代码块，不是代码的才叫。三个代码块：![code-block](images/jupyter-notebook-code-block.jpg)
+**代码块**：一个块就叫一个代码块，不是代码的才叫
 
 ## 快捷键
 
